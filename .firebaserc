@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "moth-map"
+  },
+  "targets": {
+    "moth-map": {
+      "hosting": {
+        "admin": [
+          "moth-map-admin"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Moth Map Administration</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Moth Map Data Entry</h1>
+      <div id="output"></div>
+      <form id="entry-form">
+        <label>
+          <span>Admin password:</span>
+          <input type="password" name="password" required />
+        </label>
+
+        <label>
+          <span>Site:</span>
+          <select name="site" id="select-site" required>
+            <option value="">Select a site ...</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Count date:</span>
+          <input type="date" name="date" />
+        </label>
+
+        <label>
+          <span>CEW Count:</span>
+          <input type="number" name="count" />
+        </label>
+
+        <div class="controls">
+          <button type="submit">Save</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase-firestore.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
